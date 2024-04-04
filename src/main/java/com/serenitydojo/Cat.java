@@ -1,9 +1,9 @@
 package com.serenitydojo;
 
 public class Cat {
-    public String name;
-    public String favoriteFood;
-    public int age;
+    private String name;
+    private String favoriteFood;
+    private int age;
 
     public Cat(String name, String favoriteFood, int age) {
         this.name = name;
