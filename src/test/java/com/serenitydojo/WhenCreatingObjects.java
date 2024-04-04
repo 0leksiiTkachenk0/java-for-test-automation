@@ -10,17 +10,18 @@ public class WhenCreatingObjects {
         String favoriteFood = "Tune";
         int age = 4;
 
-        Cat felix = new Cat();
+        Cat felix = new Cat("Felix", "Tuna", 4);
+        felix.setFavoriteFood("Tuna");
 
-        felix.name = "Felix";
-        felix.favoriteFood = "Tuna";
-        felix.age = 4;
+        System.out.println(felix.getName());
+        System.out.println(felix.getFavoriteFood());
+        System.out.println(felix.getAge());
 
-        Cat spot = new Cat();
 
-        spot.name = "Spot";
-        spot.favoriteFood = "Mice";
-        spot.age = 28;
+        Cat spot = new Cat("Spot", "Mice", 3);
+        System.out.println(spot.getName());
+        System.out.println(spot.getFavoriteFood());
+        System.out.println(spot.getAge());
 
     }
 }

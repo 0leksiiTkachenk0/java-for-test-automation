@@ -4,4 +4,30 @@ public class Cat {
     public String name;
     public String favoriteFood;
     public int age;
+
+    public Cat(String name, String favoriteFood, int age) {
+        this.name = name;
+        this.favoriteFood = favoriteFood;
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setFavoriteFood(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+    public String getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
