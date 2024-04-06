@@ -23,6 +23,5 @@ public class WhenCreatingObjects {
         System.out.println("Spot likes to eat " + spot.getFavoriteFood());
         System.out.println("Spot's age is " + spot.getAge());
 
-
     }
 }
