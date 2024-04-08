@@ -11,7 +11,6 @@ public class WhenCreatingObjects {
         int age = 4;
 
         Cat felix = new Cat("Felix", "Tuna", 4);
-        felix.setFavoriteFood("Tuna");
 
         System.out.println("This adorable pet's name is " + felix.getName());
         System.out.println("Spot likes to eat " + felix.getFavoriteFood());
@@ -28,9 +27,13 @@ public class WhenCreatingObjects {
     @Test
     public void cat_makes_noise() {
         Cat felix = new Cat("Felix", "Tuna", 4);
+        Cat spot = new Cat("Spot", "Mice", 3);
 
+        ;
         felix.makeNoise();
+        spot.makeNoise();
         felix.feed("Tuna");
+        spot.feed("Mice");
 
         felix.groom();
     }

@@ -5,6 +5,13 @@ public class Cat {
     private String favoriteFood;
     private int age;
 
+    public static final String CAT_NOISE = "Meow";
+
+    public static String usualFood() {
+        return "Tuna";
+    }
+
+
     public Cat(String name, String favoriteFood, int age) {
         this.name = name;
         this.favoriteFood = favoriteFood;
@@ -33,7 +40,7 @@ public class Cat {
     }
 
     public void makeNoise() {
-        System.out.println("Meow");
+        System.out.println(CAT_NOISE);
     }
 
     public void feed(String food) {
