@@ -31,4 +31,25 @@ public class Cat {
         return age;
 
     }
+
+    public void makeNoise() {
+        System.out.println("Meow");
+    }
+
+    public void feed(String food) {
+        System.out.println(name + " eats some " + food);
+    }
+
+    public void groom() {
+        lickPaws();
+        cleanFur();
+    }
+
+    private void cleanFur() {
+        System.out.println(name + " cleans his fur");
+    }
+
+    private void lickPaws() {
+        System.out.println(name + " licks his paws");
+    }
 }

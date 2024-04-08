@@ -24,4 +24,14 @@ public class WhenCreatingObjects {
         System.out.println("Spot's age is " + spot.getAge());
 
     }
-}
+
+    @Test
+    public void cat_makes_noise() {
+        Cat felix = new Cat("Felix", "Tuna", 4);
+
+        felix.makeNoise();
+        felix.feed("Tuna");
+
+        felix.groom();
+    }
+;}
