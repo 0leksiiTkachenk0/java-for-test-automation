@@ -24,7 +24,7 @@ public class WhenCreatingObjects {
         System.out.println("Spot likes to eat " + spot.getFavoriteFood());
         System.out.println("Spot's age is " + spot.getAge());
 
-        Pet hamster = new Pet("Rusty");
+        Pet hamster = new Hamster ("Rusty","wheel", 5);
 
     }
 
@@ -39,8 +39,24 @@ public class WhenCreatingObjects {
     @Test
     public void cat_makes_noise() {
         Cat felix = new Cat("Felix", "Tuna", 4);
-        Cat spot = new Cat("Spot", "Mice", 3);
 
-        System.out.println("Cats like " + Cat.usualFood());
+        System.out.println("Felix goes " + felix.makeNoise());
+    }
+
+    @Test
+    public void dog_makes_noise() {
+        Dog fido = new Dog("Fido", "bone", 5);
+        System.out.println("Fido goes " + fido.makeNoise());
+    }
+
+    @Test
+    public void pets_make_noise() {
+        Pet felix = new Cat("Felix", 4);
+        Pet fido = new Dog("Fido", "bone", 5);
+        Pet rusty = new Hamster("Rusty", "wheels", 1);
+
+        System.out.println("Felix goes " + felix.makeNoise());
+        System.out.println("Fido goes " + fido.makeNoise());
+        System.out.println("Rusty goes " + rusty.makeNoise());
     }
 }
